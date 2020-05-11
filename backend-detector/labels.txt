@@ -1,0 +1,7 @@
+0 acné
+1 cancer de piel
+2 esclerodermia
+3 herpes
+4 pie de atleta
+5 rostro sano
+6 pie sano

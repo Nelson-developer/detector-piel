@@ -27,7 +27,7 @@ pip install virtualenv
 virtualenv venv
 source ./venv/bin/activate // esto activa el entorno virtual
 ```
-**frontend**
+**frontend/**
 ```
 Instala las dependencias 
 npm install 

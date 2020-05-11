@@ -26,6 +26,7 @@ Crea un entorno virtual
 pip install virtualenv
 virtualenv venv
 source ./venv/bin/activate // esto activa el entorno virtual
+pip install -r requirements.txt
 ```
 **frontend/**
 ```

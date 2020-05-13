@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Navegation from './Navegation'
 import CardDisable from "./card-disable";
 import axios from "axios";
+import { Link } from 'react-router-dom';
 
 const Tabla = () => {
   const [datos, setdatos] = useState([]);
@@ -63,6 +64,20 @@ const Tabla = () => {
             placeholder="Buscar"
             v-model="filtroUsuarios"
           />
+        <div className="container">
+        <button className="btn-filter">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="white" height={24} viewBox="0 0 24 24" width={24}>
+            <path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z" />
+            <path d="M0 0h24v24H0z" fill="none" />
+          </svg>
+          <ul className="dropdown">
+            <li className="active"><Link>Fecha reciente</Link></li>
+            <li><Link href="#">Enfermedad</Link></li>
+            <li><Link href="#">Hora</Link></li>
+          </ul>
+        </button>
+      </div>
+      
         </div>
         <table className="table table-striped">
           <thead>

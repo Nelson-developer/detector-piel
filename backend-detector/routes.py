@@ -44,6 +44,20 @@ def file():
         guardando_prediccion(max(data), data)
         return jsonify({"prediccion": str(datos_predecidos[0])})
 
+#ordena los datos por fecha y los entrega
+@rutas.route('/sortfecha', methods=['GET'])
+def sort_fecha():
+    data_sort = []
+    for doc in collection_prediccion.find().sort("fecha", -1):
+        data_sort.append({
+            '_id': str(ObjectId(doc['_id'])),
+            'enfermedad': doc['enfermedad'],
+            'probabilidad': doc['probabilidad'],
+            'fecha': doc['fecha']
+        })
+    return jsonify(data_sort)
+
+
 
 
 lista = ["acne", "cancer de piel", "esclerodermia",

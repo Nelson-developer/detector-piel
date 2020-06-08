@@ -16,6 +16,15 @@ Luego obtenemos la 7 probabilidades que son las enfermedades que detecta las cua
 * rostro sano
 * pie sano
 
+#### Tecnologias usadas
+* React JS
+* HTML Y CSS (sin framework)
+* Electron JS
+* MongoDB
+* Flask
+* Tensorflow
+* Chart JS
+
 #### ¿Quieres probarlo? 
 
 Para esto debes seguir los siguientes pasos 

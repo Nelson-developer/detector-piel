@@ -1,4 +1,0 @@
-{
-    "python.sortImports.path": "python",
-    "python.linting.pylintArgs": ["--load-plugins", "pylint-flask"]
-}
